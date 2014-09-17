@@ -1,0 +1,12 @@
+<% if object.errors.any? %>
+  <div class="warning">
+    <% if object.errors.full_messages.include?("Email has already been taken") %>
+      <li>  <%= flash[:alert] = "Email has already been taken" %> </li>
+    <% else %>
+
+      <% object.errors.full_messages.each do |message| %>
+          <li>  <%= flash[:alert] = message %> </li>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>

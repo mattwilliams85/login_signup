@@ -1,28 +1,21 @@
-== README
+# Login / Signup Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+Tired of creating a generic user login/signup build for each assignment so I made this template to build off of.
 
-* Ruby version
+## Features
 
-* System dependencies
+* Lets the user create an account with a name, email, and password.
+* Password restrictions (must include 1 number and character limit)
+* Account Login & Signup Errors
 
-* Configuration
+## Meta
 
-* Database creation
+17 September 2014
 
-* Database initialization
+[Matthew Williams](http://github.com/mattwilliams85)
+via [Epicodus](http://www.learnhowtoprogram.com)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## License
+MIT

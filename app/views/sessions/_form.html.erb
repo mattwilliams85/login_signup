@@ -1,0 +1,12 @@
+<%= render "layouts/errors", :object => @user %>
+
+<%= form_tag sessions_path do %>
+  <form role="form">
+    <div class="form-group">
+      <%= text_field :email, nil, placeholder: 'Email'%>
+      <%= password_field :password, nil, placeholder: 'Password'  %>
+    </div >
+    <%= submit_tag("Login", :class => "btn btb-default", :id => "login") %>
+  </form>
+  <% end %>
+</div>
