@@ -11,8 +11,9 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    @user.name = @user.email.slice(0..(@user.email.index('@') - 1))
     if @user.save
+      @user.name = @user.email.slice(0..(@user.email.index('@') - 1))
+      @user.save
       session[:user_id] = @user.id
       redirect_to users_path
     else

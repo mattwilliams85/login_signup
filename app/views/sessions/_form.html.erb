@@ -3,10 +3,10 @@
 <%= form_tag sessions_path do %>
   <form role="form">
     <div class="form-group">
-      <%= text_field :email, nil, placeholder: 'Email'%>
-      <%= password_field :password, nil, placeholder: 'Password'  %>
+      <%= text_field :email, nil, placeholder: 'Email', :class => "form-control"%>
+      <%= password_field :password, nil, placeholder: 'Password', :class => "form-control"  %>
     </div >
-    <%= submit_tag("Login", :class => "btn btb-default", :id => "login") %>
+    <%= submit_tag("Login", :class => "btn btn-default btn-lg", :id => "login") %>
   </form>
   <% end %>
 </div>

@@ -11,6 +11,8 @@ gem 'bcrypt'
 gem 'capybara'
 gem 'paperclip'
 gem 'rails_12factor'
+gem 'bootstrap-sass'
+gem 'sass-rails'
 
 
 group :development do

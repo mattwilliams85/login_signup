@@ -4,6 +4,13 @@
 
 Tired of creating a generic user login/signup build for each assignment so I made this template to build off of.
 
+## To Do
+
+* Capybara Testing
+* X-editable Edit Page
+* Responsive Design
+* Devise?
+
 ## Features
 
 * Lets the user create an account with a name, email, and password.

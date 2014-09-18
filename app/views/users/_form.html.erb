@@ -1,15 +1,18 @@
-<%= render "/layouts/errors", :object => @user %>
+
 
 <%= form_for(@user) do |f| %>
   <form role="form">
     <div class="form-group">
     <% if request.fullpath.include?("edit") %>
-      <%= f.text_field :name, placeholder: 'Name' %>
+      <%= f.text_field :name, placeholder: 'Name', :class => "form-control" %>
     <% end %>
-    <%= f.text_field :email, placeholder: 'Email' %>
-    <%= f.password_field :password, placeholder: 'Password' %>
-    <%= f.password_field :password_confirmation, placeholder: 'Confirm' %>
+    <%= f.text_field :email, placeholder: 'Email', :class => "form-control"  %>
+    <%= f.password_field :password, placeholder: 'Password', :class => "form-control"  %>
+    <%= f.password_field :password_confirmation, placeholder: 'Confirm', :class => "form-control"  %>
+    <br>
+      <%= render "layouts/errors", :object => @user %>
     </div>
-      <%= f.submit("Create", :class => "btn btb-default") %>
+      <%= f.submit("Create", :class => "btn btn-default btn-lg") %>
   </form>
+
 <% end %>
